@@ -109,13 +109,12 @@ body{
 .count{color:rgba(237,229,213,.55);min-width:52px;text-align:right}
 
 .hint{
-  position:absolute;left:50%;bottom:6px;transform:translateX(-50%);
+  flex:none;text-align:center;padding:0 16px 6px;
   font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;
-  color:rgba(237,229,213,.34);white-space:nowrap;pointer-events:none;
+  color:rgba(237,229,213,.34);pointer-events:none;
   transition:opacity .5s;
 }
 .hint.gone{opacity:0}
-@media (max-width:640px){.hint{display:none}}
 
 /* ---------- 카드 공통 ---------- */
 .card{
@@ -385,8 +384,9 @@ p + p{margin-top:26px}
     </section>
 
   </div></div>
-  <div class="hint" id="hint">← → 방향키 또는 스와이프로 넘기세요</div>
 </div>
+
+<p class="hint" id="hint">방향키 · 스와이프 · 카드 클릭으로 넘기세요</p>
 
 <nav class="bar" aria-label="카드 넘기기">
   <button class="nav" id="prev" aria-label="이전 카드">←</button>
